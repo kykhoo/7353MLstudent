@@ -11,10 +11,7 @@ def hello_world():
     request_type_str = request.method
     if request_type_str == 'GET':
         return render_template('index.html', href2='')
-    
-    elif str(studentgender) =='' or str(studentiq) =='' or str(studentparentincome) =='' or str(studentparentencouragement) =='':
-        return render_template('index.html', href2='Please insert student information.')
-    
+  
     else:
         studentgender = request.form['Gender']
         studentiq = request.form['IQ']
