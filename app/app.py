@@ -12,7 +12,7 @@ def hello_world():
     if request_type_str == 'GET':
         return render_template('index.html', href2='')
     
-    elseif str(studentgender) =='' or str(studentiq) =='' or str(studentparentincome) =='' or str(studentparentencouragement) =='':
+    elif str(studentgender) =='' or str(studentiq) =='' or str(studentparentincome) =='' or str(studentparentencouragement) =='':
         return render_template('index.html', href2='Please insert student information.')
     
     else:
